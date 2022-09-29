@@ -14,8 +14,7 @@ void positiveNumbers()
             {
                 break;
             }
-            int num = Convert.ToInt32(x);
-            if (num > 0)
+            if (Convert.ToInt32(x) > 0)
             {
                 count++;
             }
