@@ -35,11 +35,5 @@ void pointOfIntersection()
 
 }
 
-// y = k1 * x + b1  5x+2
-// y = k2 * x + b2  9x+4  4x=-222
 
 pointOfIntersection();
-// foreach (double el in arr)
-// {
-//     Console.WriteLine(el);
-// }
