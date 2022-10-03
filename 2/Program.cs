@@ -1,4 +1,5 @@
 ﻿
+using System.Net.Sockets;
 void pointOfIntersection()
 {
     double b1 = 0, b2 = 0, k1 = 0, k2 = 0;
@@ -30,8 +31,16 @@ void pointOfIntersection()
     }
 
     double x = (b1 - b2) * -1 / (k1 - k2);
-    double y = k2 * x + b2;
-    Console.WriteLine($"Точка пересечения ({x};{y})");
+    if (!double.IsInfinity(x))
+    {
+        double y = k2 * x + b2;
+        Console.WriteLine($"Точка пересечения ({x};{y})");
+
+    }
+    else
+    {
+        Console.WriteLine("Прямые не пересекаются (прямые параллельны).");
+    }
 
 }
 
